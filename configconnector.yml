@@ -1,0 +1,10 @@
+
+apiVersion: core.cnrm.cloud.google.com/v1beta1
+kind: ConfigConnector
+metadata:
+  name: configconnector.core.cnrm.cloud.google.com
+  annotations:
+    repo: "https://github.com/bmykolaichenko/GoogleCluodPlatform_test"
+spec:
+ mode: cluster
+ googleServiceAccount: "bmykolaichenko@galvanic-sphinx-305710.iam.gserviceaccount.com"

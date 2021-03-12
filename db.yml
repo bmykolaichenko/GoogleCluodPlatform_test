@@ -1,0 +1,21 @@
+  apiVersion: sql.cnrm.cloud.google.com/v1beta1
+  kind: SQLDatabase
+  metadata:
+    labels:
+      label-one: "value-one"
+    name: sqldatabase-sample-v1
+  spec:
+    charset: utf8mb4
+    collation: utf8mb4_bin
+    instanceRef:
+      name: sqlinstance-sample-mysql-v1
+---
+apiVersion: sql.cnrm.cloud.google.com/v1beta1
+kind: SQLInstance
+metadata:
+  name: sqlinstance-sample-mysql-v1
+spec:
+  databaseVersion: MYSQL_5_7
+  region: us-central1
+  settings:
+    tier: db-f1-micro
